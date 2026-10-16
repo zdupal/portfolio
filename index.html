@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Zina Dupal | Business Analytics</title>
+<meta name="description" content="Zina Dupal's business analytics portfolio featuring leadership, data analytics, automation, and database projects.">
+<title>Zina Dupal | Business Analytics Portfolio</title>
 
 <style>
 :root {
@@ -19,11 +19,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 main {
@@ -44,9 +48,9 @@ h1 {
 }
 
 .lede {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--muted);
-  margin: 0.25rem 0 0;
+  margin: 0.4rem 0 0;
 }
 
 h2 {
@@ -59,6 +63,7 @@ h2 {
 h3 {
   margin: 1.25rem 0 0.25rem;
   font-size: 1.1rem;
+  line-height: 1.35;
 }
 
 .hero {
@@ -74,6 +79,11 @@ h3 {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent);
+}
+
+.hero > div {
+  flex: 1;
+  min-width: 15rem;
 }
 
 .meta {
@@ -104,12 +114,46 @@ h3 {
   margin: 0.5rem 0;
 }
 
+article ul {
+  padding-left: 1.4rem;
+}
+
+article li {
+  margin: 0.3rem 0;
+}
+
 a {
   color: #0645d8;
 }
 
 a:hover {
   color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 </style>
 </head>
@@ -118,178 +162,175 @@ a:hover {
 <main>
 
 <header class="hero">
-  <img src="assets/photo.jpg" alt="Photo of Zina Dupal">
+  <img src="assets/photo.jpg" alt="Portrait of Zina Dupal" width="144" height="144">
 
   <div>
-    <h1>Zina Dupal | Business Analytics</h1>
+    <h1>Zina Dupal</h1>
 
     <p class="lede">
-      I use data analytics, automation, and technology to solve business problems
-      and improve how organizations operate.
+      Senior Business Analytics Student | Miami University Farmer School of Business
+    </p>
+
+    <p>
+      I use data, automation, and technology to solve business problems
+      and improve operations.
     </p>
 
     <p class="meta">
       <a href="mailto:dupalz@miamioh.edu">dupalz@miamioh.edu</a> &middot;
-      <a href="https://github.com/zdupal" target="_blank" rel="noopener">GitHub</a> &middot;
-      <a href="https://www.linkedin.com/in/zinadupal" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/zdupal" target="_blank" rel="noopener noreferrer">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/zinadupal" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
   </div>
 </header>
 
-
-<section>
-  <h2>About</h2>
+<section aria-labelledby="about">
+  <h2 id="about">About</h2>
 
   <p>
-    I'm a Business Analytics senior at Miami University's Farmer School of Business
-    with experience in data analytics, workflow automation, database systems, and
-    business operations. I use SQL, Python, R, and data visualization to turn data
-    into actionable insights and improve business processes.
+    I'm a senior Business Analytics major at Miami University's Farmer School of
+    Business, graduating in May 2027. My interests span data analytics, database
+    systems, process automation, and business operations.
   </p>
 
   <p>
-    My experience spans both technical execution and organizational leadership—from
-    building automated workflows and data systems to serving as an Executive Director
-    at First Miami Student Credit Union, where I oversee the IT, BSA, and Loans
-    committee heads and help lead a 35-person student-run credit union.
+    As Executive Director of First Miami Student Credit Union, I coordinate work
+    across the IT, BSA, and Loans committees and serve as Treasurer and Head Teller.
+    I also bring hands-on experience developing business outreach tools, connecting
+    CRM systems with reporting workflows, and using Python, SQL, and R. Outside of
+    work and academics, six years of Taekwondo helped shape my discipline and
+    composure under pressure.
   </p>
 </section>
 
-
-<section>
-  <h2>Experience</h2>
+<section aria-labelledby="experience">
+  <h2 id="experience">Professional &amp; Leadership Experience</h2>
 
   <article>
-    <h3>Executive Director, First Miami Student Credit Union</h3>
-    <p class="meta">August 2026 – Present</p>
+    <h3>Executive Director | First Miami Student Credit Union</h3>
+    <p class="meta">Oxford, OH | August 2026 – Present</p>
 
     <ul>
       <li>
-        Provide executive leadership for an approximately 35-person student-run
-        credit union, implementing organizational goals while upholding FMSCU's
-        mission, policies, and operating standards
+        Oversee approximately 35 interns at a student-run credit union serving
+        approximately 400 members with $900K in assets; directly supervise IT,
+        BSA, and Loans committee heads.
       </li>
       <li>
-        Oversee the IT, BSA, and Loans committee heads, assigning projects,
-        coordinating weekly communication, leading committee meetings, and
-        supporting leadership appointments
+        Coordinate weekly committee priorities, project updates, and
+        cross-functional operations while contributing to executive-team initiatives.
       </li>
       <li>
-        Direct branch operations as a functioning Head Teller while tracking intern
-        contributions, developing future organizational goals, and expanding
-        partnerships with external organizations
+        Manage EmpowerU funding requirements as Treasurer while supporting
+        branch operations as Head Teller.
       </li>
     </ul>
   </article>
 
   <article>
-    <h3>Revenue Operations &amp; Automation Intern, Cleveland Ohio Roofing</h3>
-    <p class="meta">June 2026 – August 2026</p>
+    <h3>IT Committee Head | First Miami Student Credit Union</h3>
+    <p class="meta">Oxford, OH | October 2025 – May 2026</p>
 
     <ul>
       <li>
-        Built localized B2B lead generation pipelines using Data Axle to source
-        1,000+ commercial targets across 20 industry-specific campaigns
+        Led a four-person IT committee, overseeing project assignments,
+        technical initiatives, and cybersecurity awareness efforts.
       </li>
       <li>
-        Programmed a multi-domain email engine across 5 domains with round-robin
-        throttling and spintax messaging to maintain 100% domain reputation
+        Designed and administered a phishing simulation for approximately
+        35 interns, analyzing email click behavior to assess security awareness.
       </li>
       <li>
-        Optimized 15 GoHighLevel workflows for KPI tracking, job progress automation,
-        and pipeline movement reporting to strengthen backend reporting and
-        job-costing efficiency
+        Collaborated with the IT committee to deliver organization-wide
+        training on AI scams, phishing, multi-factor authentication,
+        and secure data handling.
       </li>
     </ul>
   </article>
 
   <article>
-    <h3>IT Committee Head, First Miami Student Credit Union</h3>
-    <p class="meta">October 2025 – May 2026</p>
+    <h3>IT &amp; Cybersecurity Intern | First Miami Student Credit Union</h3>
+    <p class="meta">Oxford, OH | February 2025 – September 2025</p>
 
     <ul>
       <li>
-        Managed a cross-functional team of 4 interns to execute disaster simulations
-        and strengthen cybersecurity governance
+        Automated CU*BASE account processes, reducing manual data entry by 30%.
       </li>
       <li>
-        Architected a deepfake phishing simulation to train staff on AI threats,
-        improving organizational security awareness
+        Standardized file management and backup procedures, reducing document
+        retrieval time by 50%.
       </li>
       <li>
-        Led a comprehensive website redesign and AI chatbot integration to modernize
-        member services and accessibility
+        Developed a mobile application proposal focused on member engagement
+        and digital security.
       </li>
     </ul>
   </article>
 
   <article>
-    <h3>Data Analyst Intern, Cleveland Ohio Roofing</h3>
-    <p class="meta">June 2025 – August 2025</p>
+    <h3>Revenue Operations &amp; Automation Intern | Cleveland Ohio Roofing</h3>
+    <p class="meta">Fairview Park, OH | June 2026 – August 2026</p>
 
     <ul>
       <li>
-        Tracked Leads/Estimates/Jobs ratios with 95% accuracy to deliver data-driven
-        insights supporting operational decision-making
+        Built B2B prospecting pipelines using Data Axle, sourcing 1,000+
+        targets across 20 industry-specific campaigns.
       </li>
       <li>
-        Optimized 10+ administrative and financial workflows in FCS Control CRM to
-        increase data reporting efficiency
+        Developed an outreach application integrating an email API,
+        domain rotation, and automated message variations.
       </li>
       <li>
-        Managed 50+ customer records in FCS Control CRM to ensure data integrity
-        and accessibility
+        Built GoHighLevel-to-Replit webhook integrations for KPI reporting
+        and job-progress tracking; developed a functional job-costing backend.
       </li>
     </ul>
   </article>
 
   <article>
-    <h3>IT &amp; Cybersecurity Intern, First Miami Student Credit Union</h3>
-    <p class="meta">February 2025 – September 2025</p>
+    <h3>Data Analyst Intern | Cleveland Ohio Roofing</h3>
+    <p class="meta">Fairview Park, OH | June 2025 – August 2025</p>
 
     <ul>
       <li>
-        Automated CU*BASE account processes to reduce manual data entry time by 30%
-        and improve operational speed
+        Analyzed lead, estimate, and job conversion metrics to support
+        operational reporting.
       </li>
       <li>
-        Standardized file management and backup systems to reduce internal document
-        retrieval time by 50%
+        Optimized 10+ administrative and financial workflows in FCS Control
+        CRM to streamline reporting.
       </li>
       <li>
-        Developed a mobile app proposal outlining key features to enhance digital
-        member engagement and security
+        Managed 50+ customer records to support data integrity and accessibility.
       </li>
     </ul>
   </article>
-
 </section>
 
-
-<section>
-  <h2>Projects</h2>
+<section aria-labelledby="projects">
+  <h2 id="projects">Projects</h2>
 
   <article class="project">
     <h3>WEGZ Credit Union Security Shield</h3>
     <p class="meta">ISA 345 Final Project | April 2026 – May 2026</p>
 
     <p>
-      Designed a 3NF relational database for a simulated financial institution
-      focused on mitigating AI deepfake and social engineering risks.
+      Originated the concept for a security-focused project involving a simulated
+      financial institution. Contributed to third normal form (3NF) database
+      design, operational SQL, and the project report overview.
     </p>
 
     <p>
-      Developed automated access logs, real-time incident triggers, an n8n
-      natural-language SQL agent, and an administrative web portal for employee
-      training compliance.
+      Helped implement a functional administrative portal featuring access logs,
+      incident triggers, and an n8n natural-language SQL agent to support
+      employee training compliance.
     </p>
 
     <ul class="chips">
       <li>SQL</li>
-      <li>Relational Database Design</li>
-      <li>3NF Normalization</li>
-      <li>n8n Automation</li>
-      <li>AI</li>
+      <li>Relational Databases</li>
+      <li>3NF</li>
+      <li>n8n</li>
       <li>Cybersecurity</li>
     </ul>
 
@@ -297,16 +338,15 @@ a:hover {
       <a
         href="https://github.com/zdupal/portfolio/tree/main/projects/project-1"
         target="_blank"
-        rel="noopener">
+        rel="noopener noreferrer">
         View Project Files
       </a>
     </p>
   </article>
 </section>
 
-
-<section>
-  <h2>Education</h2>
+<section aria-labelledby="education">
+  <h2 id="education">Education</h2>
 
   <p>
     <strong>Miami University Farmer School of Business</strong><br>
@@ -316,94 +356,69 @@ a:hover {
   </p>
 </section>
 
-
-<section>
-  <h2>Coursework</h2>
+<section aria-labelledby="coursework">
+  <h2 id="coursework">Relevant Coursework</h2>
 
   <ul>
     <li>
       <strong>ISA 345: Database Systems and Data Warehousing</strong> —
       Database design, SQL, relational systems, normalization, and data warehousing
     </li>
-
     <li>
       <strong>ISA 381: Concepts in Business Programming</strong> —
       Python programming and computational approaches to business problems
     </li>
-
     <li>
       <strong>ISA 401: Business Intelligence and Data Visualization</strong> —
-      Business intelligence, data analysis, and visualization for communicating
-      business insights
+      Business intelligence, data analysis, and visualization
     </li>
-
     <li>
       <strong>ISA 391: Applied Regression Analysis in Business</strong> —
-      Regression modeling and analysis of relationships in business data
+      Regression modeling and business data analysis
     </li>
-
     <li>
       <strong>ISA 491: Introduction to Data Mining in Business</strong> —
-      Data preparation, dimensionality reduction, and introductory data mining
-      techniques
+      Data preparation, dimensionality reduction, and data mining
     </li>
-
     <li>
       <strong>ISA 225: Principles of Business Analytics</strong> —
-      Foundations of business analytics and data-driven decision-making
+      Foundations of analytics and data-driven decision-making
     </li>
-
     <li>
       <strong>ISA 365: Statistical Monitoring and Design of Experiments</strong> —
-      Statistical monitoring, experimentation, and evaluation of business processes
+      Statistical monitoring and experimentation
     </li>
-
     <li>
       <strong>ISA 235: Information Technology and the Intelligent Enterprise</strong> —
-      Information systems and the role of technology in business operations
+      Information systems and technology in business operations
     </li>
   </ul>
 </section>
 
+<section aria-labelledby="skills">
+  <h2 id="skills">Skills</h2>
 
-<section>
-  <h2>Skills</h2>
-
-  <h3>Data &amp; Programming</h3>
+  <h3>Programming</h3>
   <ul class="chips">
     <li>Python</li>
     <li>SQL</li>
     <li>R</li>
-    <li>Data Mining</li>
-    <li>Applied Regression Analysis</li>
-    <li>Business Statistics</li>
   </ul>
 
-  <h3>Data Systems &amp; Analytics</h3>
+  <h3>Analytics</h3>
   <ul class="chips">
-    <li>Database Systems</li>
-    <li>Data Warehousing</li>
-    <li>Business Intelligence</li>
+    <li>Statistics</li>
+    <li>Regression Analysis</li>
     <li>Data Visualization</li>
   </ul>
 
-  <h3>Business &amp; Automation</h3>
+  <h3>Business Systems</h3>
   <ul class="chips">
-    <li>Revenue Operations</li>
-    <li>Workflow Automation</li>
-    <li>CRM Systems</li>
     <li>GoHighLevel</li>
     <li>FCS Control CRM</li>
-  </ul>
-
-  <h3>Technology &amp; Security</h3>
-  <ul class="chips">
-    <li>Cybersecurity Governance</li>
     <li>CU*BASE</li>
-    <li>Process Automation</li>
   </ul>
 </section>
-
 
 </main>
 </body>
