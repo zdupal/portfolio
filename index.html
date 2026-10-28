@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,12 +74,23 @@ h3 {
   flex-wrap: wrap;
 }
 
-.hero img {
+.hero .portrait-frame {
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
-  object-fit: cover;
   border: 3px solid var(--accent);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.hero .portrait-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transform: scale(1.4);
+  transform-origin: center 25%;
 }
 
 .hero > div {
@@ -144,7 +156,7 @@ a:focus-visible {
     font-size: 1.9rem;
   }
 
-  .hero img {
+  .hero .portrait-frame {
     width: 7.5rem;
     height: 7.5rem;
   }
@@ -162,7 +174,9 @@ a:focus-visible {
 <main>
 
 <header class="hero">
-  <img src="assets/headshot_3.jpeg" alt="Portrait of Zina Dupal" width="144" height="144">
+  <div class="portrait-frame">
+    <img src="assets/headshot_3.jpeg" alt="Portrait of Zina Dupal">
+  </div>
 
   <div>
     <h1>Zina Dupal</h1>
