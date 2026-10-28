@@ -77,11 +77,10 @@ h3 {
 .hero .portrait-frame {
   width: 9rem;
   height: 9rem;
-  aspect-ratio: 1 / 1;
+  flex: 0 0 9rem;
   border-radius: 50%;
   border: 3px solid var(--accent);
   overflow: hidden;
-  flex: 0 0 9rem;
 }
 
 .hero .portrait-frame img {
@@ -89,12 +88,12 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
   transform: scale(1.7);
-  transform-origin: center top;
+  transform-origin: center center;
 }
 
-.hero > div {
+.hero > div:not(.portrait-frame) {
   flex: 1;
   min-width: 15rem;
 }
